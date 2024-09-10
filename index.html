@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Descriere scurtă a aplicației Bankify" />
+    <meta name="keywords" content="banking, finanțe, aplicație bancară" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Bank!fy</title>
+  </head>
+  <body>
+    <div class="circle-container">
+      <div class="circle"></div>
+      <div class="circle_two"></div>
+      <div class="circle_three"></div>
+      <div class="circle_four"></div>
+      <div class="circle_five"></div>
+      <header>
+        <nav class="navbar">
+          <div class="nav_logo">
+            <span class="nav_logo first-letter">B</span
+            ><span class="nav_logo rest-letter">ank!fy</span
+            ><span class="nav_logo first-letter">.</span>
+          </div>
+
+          <div class="nav_btns">
+            <a href="#our_app">Our App</a>
+            <a href="#features">Features</a>
+            <a href="#our_team">Team</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact_us">Contact Us</a>
+          </div>
+          <div class="hamburger">
+            <button class="btn_hamburger">
+              <div class="bar"></div>
+            </button>
+          </div>
+          <div class="hamburger_nav inactive">
+            <a href="#our_app">Our App</a>
+            <a href="#features">Features</a>
+            <a href="#our_team">Team</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact_us">Contact Us</a>
+          </div>
+          <div class="nav_open-account">
+            <button class="open_btn">Join Us</button>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <div class="header_description">
+          <h1 class="header_one">Secure.</h1>
+          <h2 class="header_two">Simple.</h2>
+          <h3 class="header_three">Smart.</h3>
+        </div>
+
+        <div class="header_form">
+          <div class="login_header">
+            <span>Login</span>
+          </div>
+          <div class="input_box">
+            <input
+              type="text"
+              placeholder="Username"
+              id="user"
+              class="input_field"
+              required
+            />
+            <ion-icon name="person-outline"></ion-icon>
+            <!-- <label for="user" class="login_label">Username</label> -->
+          </div>
+          <div class="input_box">
+            <input
+              type="password"
+              placeholder="Password"
+              id="pass"
+              class="input_field"
+              required
+            />
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <!-- <label for="pass" class="login_label">Password</label> -->
+          </div>
+          <div class="wrong_input">Incorrect username or password.</div>
+          <div class="input_btn">
+            <button type="submit">Submit</button>
+          </div>
+        </div>
+      </main>
+
+      <dialog class="nav_open-account-dialog">
+        <h2>Join Us</h2>
+        <p>Welcome! Please sign up to become a member.</p>
+
+        <form action="#" method="dialog">
+          <div class="form-group">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <button class="modal_btn" type="submit">Submit</button>
+
+          <button class="close_btn" type="close">Close</button>
+        </form>
+      </dialog>
+    </div>
+
+    <!-- Our App -->
+
+    <section id="our_app">
+      <h1 class="app_mainheading">Our App.</h1>
+      <div class="app_details">
+        <div class="details_wrapper">
+          <div class="details_container">
+            <span class="material-symbols-outlined"> account_balance </span>
+            <h1 class="header_details">Instant Balance & Card Details.</h1>
+            <p class="paragraph_description">
+              With Bankify, you can instantly access your account balance and
+              card details as soon as you log in. The app’s user-friendly
+              interface allows you to view your available funds without delay.
+              Additionally, you can check essential card details, such as the
+              expiration date, ensuring you're always up-to-date and prepared
+              for any financial situation.
+            </p>
+          </div>
+        </div>
+        <div class="details_wrapper">
+          <div class="details_container">
+            <span class="material-symbols-outlined"> receipt_long </span>
+            <h1 class="header_details">Comprehensive Transaction Overview.</h1>
+            <p class="paragraph_description">
+              Bankify provides you with a complete overview of your finances.
+              You can easily track the total amount of your transactions,
+              whether they are expenses or income, all in one place. This allows
+              you to manage your budget more efficiently and have full control
+              over your account movements. Each transaction is clearly
+              highlighted, giving you a detailed understanding of your financial
+              flow.
+            </p>
+          </div>
+        </div>
+        <div class="details_wrapper">
+          <div class="details_container">
+            <span class="material-symbols-outlined"> attach_money </span>
+            <h1 class="header_details">Instant Credit at Your Fingertips.</h1>
+            <p class="paragraph_description">
+              Obtaining credit has never been easier. With Bankify, you can
+              quickly apply for a personalized loan by simply entering the
+              desired amount and repayment period. The process is transparent
+              and fast, so you can receive approval within minutes. No
+              bureaucracy, just quick solutions that put your finances at your
+              fingertips when you need them.
+            </p>
+          </div>
+        </div>
+        <div class="details_wrapper">
+          <div class="details_container">
+            <span class="material-symbols-outlined"> swap_horiz </span>
+            <h1 class="header_details">Seamless Quick Transfers</h1>
+            <p class="paragraph_description">
+              Transfers become incredibly simple and fast with Bankify. You can
+              instantly send money to any user by using only their username. No
+              need for long IBANs or complicated details. Just a few taps, and
+              the funds are sent, allowing you to manage payments efficiently
+              and without hassle.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+
+    <section id="features">
+      <h1>Key Features.</h1>
+      <div class="features_container">
+        <div class="feature_item">
+          <ion-icon name="shield-checkmark-outline"></ion-icon>
+          <h2>Security</h2>
+          <p>
+            Our app is built with top-tier security measures to protect your
+            financial data.
+          </p>
+        </div>
+        <div class="feature_item">
+          <ion-icon name="speedometer-outline"></ion-icon>
+          <h2>Speed</h2>
+          <p>
+            Experience fast and seamless transactions with minimal loading
+            times.
+          </p>
+        </div>
+        <div class="feature_item">
+          <ion-icon name="analytics-outline"></ion-icon>
+          <h2>Expense Tracking</h2>
+          <p>
+            Track and categorize your expenses to gain insights into your
+            spending habits and improve your financial planning.
+          </p>
+        </div>
+        <!-- Adaugă mai multe elemente în funcție de ce funcționalități ai -->
+      </div>
+    </section>
+
+    <!-- Our Team -->
+
+    <section id="our_team">
+      <h1>Our Team.</h1>
+      <p class="ourteam_description">
+        Meet the professionals who lead our bank to success every day.
+      </p>
+      <div class="team-container">
+        <div class="team-member">
+          <img
+            src="./imgs/John Doe-lazy.jpg"
+            data-src="./imgs/John Doe.jpg"
+            alt="Member 1"
+            class="lazy-img"
+          />
+          <h3>John Doe</h3>
+          <p>CEO</p>
+          <p class="member-description">
+            John has over 5 years of experience in the financial industry and
+            leads our team with a vision for innovation and customer focus.
+          </p>
+        </div>
+        <div class="team-member">
+          <img
+            src="./imgs/Jane Smith-lazy.jpg"
+            data-src="./imgs/Jane Smith.jpg"
+            alt="Member 2"
+          />
+          <h3>Jane Smith</h3>
+          <p>Chief Financial Officer</p>
+          <p class="member-description">
+            Jane oversees the financial operations, ensuring the bank's
+            financial health and compliance with regulations.
+          </p>
+        </div>
+        <div class="team-member">
+          <img
+            src="./imgs/Michael Brown-lazy.jpg"
+            data-src="./imgs/Michael Brown.jpg"
+            alt="Member 3"
+          />
+          <h3>Michael Brown</h3>
+          <p>Chief Technology Officer</p>
+          <p class="member-description">
+            Michael leads the technology team, ensuring that all digital
+            solutions are innovative and secure, providing our customers with
+            the best online experience.
+          </p>
+        </div>
+
+        <div class="team-member">
+          <img
+            src="./imgs/emily-johnson-lazy.jpg"
+            data-src="./imgs/emily-johnson.jpg"
+            alt="Member 4"
+          />
+          <h3>Emily Johnson</h3>
+          <p>Head of Customer Support</p>
+          <p class="member-description">
+            Emily oversees the customer support team, ensuring that every client
+            receives prompt and efficient help, delivering a positive and
+            hassle-free experience.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+
+    <section id="testimonials">
+      <h1>What Our Users Say.</h1>
+      <div class="testimonial_container">
+        <div class="testimonial_item">
+          <img
+            src="./imgs/testimonial-1.jpg"
+            alt="Maria Popescu"
+            class="testimonial_img"
+          />
+          <p>
+            "Bank!fy has revolutionized the way I manage my finances. The app is
+            intuitive and secure."
+          </p>
+          <h3>— Luca Moretti, Freelancer</h3>
+        </div>
+        <div class="testimonial_item">
+          <img
+            src="./imgs/testimonial-2.jpeg"
+            alt="Maria Popescu"
+            class="testimonial_img"
+          />
+          <p>
+            "Quick transfers and excellent customer support make Bank!fy my
+            go-to financial tool."
+          </p>
+          <h3>— Sophie Dubois, Entrepreneur</h3>
+        </div>
+        <div class="testimonial_item">
+          <img
+            src="./imgs/testimonial-3.jpeg"
+            alt="Maria Popescu"
+            class="testimonial_img"
+          />
+          <p>
+            "Bank!fy offers unparalleled convenience. Managing multiple accounts
+            has never been easier."
+          </p>
+          <h3>— Elena Rodriguez, Financial Consultant</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer id="contact_us">
+      <div class="footer_aboutus">
+        <div class="header_footer">
+          <h1>About Us</h1>
+        </div>
+        <div class="aboutus_paragraphs">
+          <p>
+            Bank!fy is committed to providing top-notch financial services and
+            support.
+          </p>
+          <p>
+            Your trust is our priority.Contact us anytime for assistance or
+            inquiries.
+          </p>
+          <ion-icon name="mail-outline"></ion-icon>
+          <p>contact@bankify.com</p>
+          <ion-icon name="call-outline"></ion-icon>
+          <p>+261 032 781 32</p>
+          <p>&copy; 2024 Bank!fy. All rights reserved.</p>
+        </div>
+      </div>
+      <div class="footer_latesttweet">
+        <div class="header_footer">
+          <h1>Latest Tweets</h1>
+        </div>
+        <div class="twitter_posts">
+          <div class="twitter_message">
+            <ion-icon name="logo-twitter"></ion-icon>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem accusamus libero pariatur repellendus. Nihil ipsa
+              laudantium perspiciatis blanditiis commodi nulla.
+            </p>
+          </div>
+          <div class="twitter_message">
+            <ion-icon name="logo-twitter"></ion-icon>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem accusamus libero pariatur repellendus. Nihil ipsa
+              laudantium perspiciatis blanditiis commodi nulla.
+            </p>
+          </div>
+          <div class="twitter_message">
+            <ion-icon name="logo-twitter"></ion-icon>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem accusamus libero pariatur repellendus. Nihil ipsa
+              laudantium perspiciatis blanditiis commodi nulla.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer_socialicons">
+        <div class="header_footer">
+          <h1>Become our friend</h1>
+        </div>
+        <div>
+          <div class="footer_icons">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          </div>
+          <div class="footer_icons">
+            <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          </div>
+          <div class="footer_icons">
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <p class="copyright">
+      &copy; 2024 Bank!fy. Acest site a fost creat de Lăzărescu Bogdan. Nu este
+      permisă utilizarea sa în alte scopuri fără acordul explicit.
+    </p>
+  </body>
+</html>

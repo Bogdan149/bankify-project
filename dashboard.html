@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dashboard.css" />
+    <script src="dashboard.js" defer></script>
+    <title>Dashboard - Bank!fy</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav_logo">
+        <span class="nav_logo first-letter">B</span
+        ><span class="nav_logo rest-letter">ank!fy</span
+        ><span class="nav_logo first-letter">.</span>
+      </div>
+
+      <div class="username_logout">
+        <div class="username">
+          <img class="user_picture" src="" alt="" />
+          <div class="paragraphs_area">
+            <p class="welcome_message">Welcome,</p>
+            <p class="show_username"></p>
+          </div>
+        </div>
+        <div class="logout">
+          <button class="logout_btn">Log Out</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="first_section">
+        <div class="card_and_incomes">
+          <!-- Card -->
+          <div class="card_picture">
+            <div class="card_logo">
+              <div class="visa_logo">
+                <img src="./imgs/visa-logo.png" alt="" />
+              </div>
+              <div class="account_balance">
+                <p class="balance_value"></p>
+              </div>
+            </div>
+            <div class="card_number">
+              <p>**** **** **** 3789</p>
+            </div>
+            <div class="info_card">
+              <div class="validity">
+                <p class="validity-first">Valid Thru</p>
+                <p class="validity-second">07 / 23</p>
+              </div>
+              <div class="card_holder">
+                <p class="card_holder-first">Card Holder</p>
+                <p class="card_holder-second"></p>
+              </div>
+            </div>
+          </div>
+          <!-- Incomes and outcomes -->
+          <div class="incomes_outcomes">
+            <div class="total_incomes">
+              <p class="incomes_paragraph">Total incomes</p>
+              <p class="incomes_value"></p>
+            </div>
+            <div class="total_incomes">
+              <p class="outcomes_paragraph">Total outcomes</p>
+              <p class="outcomes_value"></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- LOAN AND PAYMENTS -->
+
+        <!-- REQUEST LOAN -->
+        <div class="loan_and_payments">
+          <div class="request_loan">
+            <div class="request_title">
+              <p>Take a loan.</p>
+            </div>
+            <div><p class="error_loan">Invalid amount or period.</p></div>
+            <div class="loan_form">
+              <div class="input_box">
+                <input type="number" id="amount" class="input_field" required />
+                <label for="Amount" class="login_label">Amount</label>
+              </div>
+              <div class="input_box">
+                <input type="number" id="period" class="input_field" required />
+                <label for="Length" class="login_label"
+                  >Period (1 to 5 years)</label
+                >
+              </div>
+              <div class="loan_btn">
+                <button type="submit">Submit</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PAYMENTS -->
+          <div class="payments">
+            <div class="payments_title">
+              <p>Make a payment.</p>
+            </div>
+            <div><p class="error_payments">Invalid amount or user.</p></div>
+            <div class="payment_form">
+              <div class="input_box">
+                <input
+                  type="text"
+                  id="beneficiary"
+                  class="input_field"
+                  required
+                />
+                <label for="beneficiary" class="login_label"
+                  >To: Username</label
+                >
+              </div>
+              <div class="input_box">
+                <input
+                  type="number"
+                  id="amount_payment"
+                  class="input_field"
+                  required
+                />
+                <label for="amount" class="login_label">Amount</label>
+              </div>
+              <div class="transfer_btn">
+                <button type="submit">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRANSACTIONS -->
+      <section class="second_section">
+        <p>Recent Transactions</p>
+        <table class="transactions_table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Amount</th>
+              <th>Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="deposit">
+              <td>2024-08-21</td>
+              <td>$500.00</td>
+              <td>Deposit</td>
+            </tr>
+            <tr class="withdrawal">
+              <td>2024-08-20</td>
+              <td>$200.00</td>
+              <td>Withdrawal</td>
+            </tr>
+            <tr class="deposit">
+              <td>2024-08-18</td>
+              <td>$300.00</td>
+              <td>Deposit</td>
+            </tr>
+            <tr class="withdrawal">
+              <td>2024-08-17</td>
+              <td>$150.00</td>
+              <td>Withdrawal</td>
+            </tr>
+            <tr class="withdrawal">
+              <td>2024-08-12</td>
+              <td>$150.00</td>
+              <td>Withdrawal</td>
+            </tr>
+            <tr class="withdrawal">
+              <td>2024-08-11</td>
+              <td>$150.00</td>
+              <td>Withdrawal</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
