@@ -1,32 +1,28 @@
 # Bank!fy
 
-Bank!fy este o aplicație web inovativă care oferă utilizatorilor posibilitatea de a gestiona finanțele personale într-un mod simplu și eficient. Scopul proiectului este de a ajuta utilizatorii să-și monitorizeze veniturile, cheltuielile și economiile, oferindu-le o interfață intuitivă și ușor de folosit.
+Bank!fy is an innovative web application that offers users the ability to manage their personal finances in a simple and efficient way. The goal of the project is to help users track their income, expenses, and savings by providing an intuitive and easy-to-use interface.
 
-## Funcționalități principale
+## Main Features
 
-- Monitorizarea tranzacțiilor financiare și a soldului existent pe cont.
-- Vizualizarea grafică a veniturilor și cheltuielilor.
-- Efectuarea plăților către alți utilizatori.
-- Verificarea datelor cardului pe care-l deții.
-- Obținerea unui credit rapid.
+- Track financial transactions and the current account balance.
+- Graphical visualization of income and expenses.
+- Make payments to other users.
+- Check the details of your owned card.
+- Obtain a quick loan.
 
-## Cum să rulezi proiectul
+### How to Run the Project
 
-1. Clonează repository-ul:
+1) Download the repository.
 
-   ```bash
-   git clone https://github.com/USERNAME/bankify-project.git
-   ```
+2) Open the index.html file in your preferred browser to explore the application.
 
-2. Deschide fișierul `index.html` în browserul tău preferat pentru a explora aplicația.
-
-## Tehnologii utilizate
+#### Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript
 
-3. Useri pentru logare in aplicatie :
+##### Users for logging into the application:
 
 userName: "EmilyJ",
 password: 12345
@@ -36,5 +32,3 @@ password: 11111
 
 userName: "JaneS",
 password: 44444
-
-## Contribuții
