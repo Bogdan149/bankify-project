@@ -30,7 +30,7 @@ body {
 }
 
 .circle {
-  background-image: url("/imgs/ivan-samkov.jpg");
+  background-image: url("./imgs/ivan-samkov.jpg");
   background-position: center;
   background-size: cover;
   background-color: #ccc;
