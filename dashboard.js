@@ -95,9 +95,7 @@ logoutBtn.addEventListener("click", function (e) {
 
 // Make a payment
 
-
-
-const payments = () => {  
+const payments = () => {
   const amount = Number(document.querySelector("#amount_payment").value);
   const userTotal = userBalance();
   const beneficiaryUser = document.querySelector("#beneficiary").value;
@@ -122,6 +120,8 @@ const payments = () => {
   }
 
   // Cautam beneficiarul in lista de conturi
+
+  console.log(beneficiaryUser);
 
   const beneficiaryAccount = accounts.find(
     (account) => account.userName === beneficiaryUser
@@ -210,3 +210,4 @@ loanBtn.addEventListener("click", (e) => {
   e.preventDefault();
   loan();
 });
+
