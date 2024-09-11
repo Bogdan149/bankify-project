@@ -3,7 +3,34 @@
 // // Prelucrare informatii Local Storage
 
 const userData = JSON.parse(localStorage.getItem("loggedInUser"));
-const accounts = JSON.parse(localStorage.getItem("accounts"));
+const accounts = {const account1 = {
+  fullName: "Emily Johnson",
+  userName: "EmilyJ",
+  password: 12345,
+  picture: "./imgs/emily-johnson.jpg",
+  movements: [-1000, 10000, 25000, -5000, 50000, -15000, -10000, 100000],
+};
+
+const account2 = {
+  fullName: "Michael Brown",
+  userName: "MichaelB",
+  password: 11111,
+  picture: "./imgs/Michael Brown.jpg",
+  movements: [
+    -1000, 10000, 500000, -150000, -30000, 100000, -120000, 125000, 100000,
+  ],
+};
+
+const account3 = {
+  fullName: "Jane Smith",
+  userName: "JaneS",
+  password: 44444,
+  picture: "./imgs/Jane Smith.jpg",
+  movements: [
+    -1000, 10000, 25000, -5000, 90000, -15000, -20000, 110000, -120000, 15000,
+    460000,
+  ],
+}; }
 
 // Declarare variabile
 
