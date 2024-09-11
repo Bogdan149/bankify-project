@@ -95,8 +95,9 @@ logoutBtn.addEventListener("click", function (e) {
 
 // Make a payment
 
-const payments = () => {
-  const beneficiaryUser = document.querySelector("#beneficiary").value;
+const beneficiaryUser = document.querySelector("#beneficiary").value;
+
+const payments = () => {  
   const amount = Number(document.querySelector("#amount_payment").value);
   const userTotal = userBalance();
 
