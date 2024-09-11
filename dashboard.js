@@ -95,11 +95,12 @@ logoutBtn.addEventListener("click", function (e) {
 
 // Make a payment
 
-const beneficiaryUser = document.querySelector("#beneficiary").value;
+
 
 const payments = () => {  
   const amount = Number(document.querySelector("#amount_payment").value);
   const userTotal = userBalance();
+  const beneficiaryUser = document.querySelector("#beneficiary").value;
 
   // Verificam daca suma introdusa este corecta
 
