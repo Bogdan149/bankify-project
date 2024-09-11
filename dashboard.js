@@ -3,7 +3,7 @@
 // // Prelucrare informatii Local Storage
 
 const userData = JSON.parse(localStorage.getItem("loggedInUser"));
-const accounts = {const account1 = {
+const accounts = [const account1 = {
   fullName: "Emily Johnson",
   userName: "EmilyJ",
   password: 12345,
@@ -30,7 +30,7 @@ const account3 = {
     -1000, 10000, 25000, -5000, 90000, -15000, -20000, 110000, -120000, 15000,
     460000,
   ],
-}; }
+}; ];
 
 // Declarare variabile
 
