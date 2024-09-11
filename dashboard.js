@@ -1,36 +1,41 @@
 "use strict";
 
-// // Prelucrare informatii Local Storage
+// Verificăm dacă există date în localStorage
+let userData = JSON.parse(localStorage.getItem("loggedInUser"));
+let accounts = JSON.parse(localStorage.getItem("accounts"));
 
-const userData = JSON.parse(localStorage.getItem("loggedInUser"));
-const accounts = [account1 = {
-  fullName: "Emily Johnson",
-  userName: "EmilyJ",
-  password: 12345,
-  picture: "./imgs/emily-johnson.jpg",
-  movements: [-1000, 10000, 25000, -5000, 50000, -15000, -10000, 100000],
-},
-
-account2 = {
-  fullName: "Michael Brown",
-  userName: "MichaelB",
-  password: 11111,
-  picture: "./imgs/Michael Brown.jpg",
-  movements: [
-    -1000, 10000, 500000, -150000, -30000, 100000, -120000, 125000, 100000,
-  ],
-},
-
-account3 = {
-  fullName: "Jane Smith",
-  userName: "JaneS",
-  password: 44444,
-  picture: "./imgs/Jane Smith.jpg",
-  movements: [
-    -1000, 10000, 25000, -5000, 90000, -15000, -20000, 110000, -120000, 15000,
-    460000,
-  ],
-}];
+// Dacă datele lipsesc, le inițializăm
+if (!accounts) {
+  accounts = [
+    {
+      fullName: "Emily Johnson",
+      userName: "EmilyJ",
+      password: 12345,
+      picture: "./imgs/emily-johnson.jpg",
+      movements: [-1000, 10000, 25000, -5000, 50000, -15000, -10000, 100000],
+    },
+    {
+      fullName: "Michael Brown",
+      userName: "MichaelB",
+      password: 11111,
+      picture: "./imgs/Michael Brown.jpg",
+      movements: [
+        -1000, 10000, 500000, -150000, -30000, 100000, -120000, 125000, 100000,
+      ],
+    },
+    {
+      fullName: "Jane Smith",
+      userName: "JaneS",
+      password: 44444,
+      picture: "./imgs/Jane Smith.jpg",
+      movements: [
+        -1000, 10000, 25000, -5000, 90000, -15000, -20000, 110000, -120000, 15000,
+        460000,
+      ],
+    },
+  ];
+  localStorage.setItem("accounts", JSON.stringify(accounts));
+}
 
 // Declarare variabile
 
