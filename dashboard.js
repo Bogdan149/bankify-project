@@ -122,7 +122,7 @@ const payments = () => {
   // Cautam beneficiarul in lista de conturi
 
   const beneficiaryAccount = accounts.find(
-    (account) => account.userName === beneficiaryUser
+    (account) => account.userName == beneficiaryUser
   );
 
   if (!beneficiaryAccount) {
