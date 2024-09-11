@@ -166,6 +166,13 @@ const payments = () => {
     return;
   }
 
+  if (beneficiaryUser === userData.userName) {
+    errorPayments.style.opacity = 1;
+    errorPayments.textContent = "You cannot transfer money to yourself.";
+    errorLoan.style.opacity = 0;
+    return;
+  }
+
   // Adaugam suma in lista de conturi
 
   beneficiaryAccount.movements.push(Number(amount));
